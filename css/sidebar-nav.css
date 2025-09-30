@@ -3,9 +3,7 @@
 
 /* Mengatur layout di dalam sidebar kanan */
 .sidebar-nav {
-    display: flex;
-    justify-content: center; /* Memusatkan item secara horizontal */
-    align-items: center; /* Memusatkan item secara vertikal */
+    display: sticky; /* Membuat sidebar tetap di tempat saat di-scroll */
 }
 
 .nav-list {

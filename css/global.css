@@ -1,32 +1,34 @@
-/* Mengatur ulang beberapa gaya default browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Gaya untuk seluruh halaman (body) */
 body {
-    background-color: #121212; /* Warna latar belakang utama yang sangat gelap */
-    font-family: sans-serif; /* Kita akan gunakan font dasar dulu */
+    background-color: #121212;
+    font-family: sans-serif;
     display: flex;
-    justify-content: center; /* Pusatkan konten utama di tengah halaman */
+    justify-content: center;
     padding: 20px;
 }
 
-/* Gaya untuk wadah utama 3 kolom */
-.portfolio-container {
-    display: grid; /* Menggunakan CSS Grid untuk membuat layout kolom */
-    grid-template-columns: 300px 1fr 100px; /* Lebar kolom: Kiri 300px, Tengah fleksibel, Kanan 100px */
-    gap: 20px; /* Jarak antar kolom */
-    width: 100%;
-    max-width: 1400px; /* Lebar maksimum website kita */
+aside {
+    position: sticky;
+    top: 20px;
+    align-self: start;
 }
 
-/* Memberi warna pada setiap kolom agar terlihat jelas */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 300px 1fr 100px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+
 .sidebar-info {
-    background-color: #1a1a1a; /* Warna abu-abu gelap untuk sidebar */
-    border-radius: 15px; /* Membuat sudutnya melengkung */
+    background-color: #1a1a1a;
+    border-radius: 15px;
     padding: 20px;
 }
 
@@ -37,41 +39,6 @@ body {
 }
 
 .sidebar-nav {
-    background-color: #1a1a1a;
-    border-radius: 15px;
-    padding: 20px;
-}
-
-
-
-
-/* Mengatur ulang beberapa gaya default browser */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Gaya untuk seluruh halaman (body) */
-body {
-    background-color: #121212; /* Warna latar belakang utama yang sangat gelap */
-    font-family: sans-serif; /* Kita akan gunakan font dasar dulu */
-    display: flex;
-    justify-content: center; /* Pusatkan konten utama di tengah halaman */
-    padding: 20px;
-}
-
-/* Gaya untuk wadah utama 3 kolom */
-.portfolio-container {
-    display: grid; /* Menggunakan CSS Grid untuk membuat layout kolom */
-    grid-template-columns: 300px 1fr 100px; /* Lebar kolom: Kiri 300px, Tengah fleksibel, Kanan 100px */
-    gap: 20px; /* Jarak antar kolom */
-    width: 100%;
-    max-width: 1400px; /* Lebar maksimum website kita */
-}
-
-/* Memberi warna pada setiap kolom agar terlihat jelas */
-.sidebar-info, .main-content, .sidebar-nav {
     background-color: #1a1a1a;
     border-radius: 15px;
     padding: 20px;
