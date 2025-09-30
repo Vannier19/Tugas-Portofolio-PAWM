@@ -1,16 +1,13 @@
 
-/* === STYLE UNTUK KOLOM KANAN === */
-
-/* Mengatur layout di dalam sidebar kanan */
 .sidebar-nav {
-    display: sticky; /* Membuat sidebar tetap di tempat saat di-scroll */
+    display: sticky;
 }
 
 .nav-list {
-    list-style: none; /* Menghilangkan bullet points */
+    list-style: none;
     display: flex;
-    flex-direction: column; /* Menyusun item dari atas ke bawah */
-    gap: 25px; /* Jarak antar tombol navigasi */
+    flex-direction: column;
+    gap: 25px;
 }
 
 .nav-link {
@@ -19,31 +16,27 @@
     align-items: center;
     width: 50px;
     height: 50px;
-    background-color: #121212; /* Warna latar tombol lebih gelap */
-    border-radius: 50%; /* Membuat tombol menjadi bulat sempurna */
+    background-color: #121212;
+    border-radius: 50%;
     text-decoration: none;
     transition: background-color 0.3s, border 0.3s;
-    border: 2px solid transparent; /* Border transparan agar tidak goyang saat hover */
+    border: 2px solid transparent;
 }
 
-/* Nanti kita akan ganti span ini dengan ikon */
 .nav-link span {
     color: #aaa;
-    font-size: 10px; /* Ukuran font sementara untuk placeholder */
+    font-size: 10px;
 }
 
-/* Efek saat kursor mouse menyentuh tombol */
 .nav-link:hover {
     background-color: #2a2a2a;
-    border: 2px solid #FFD700; /* Border emas/kuning saat hover */
+    border: 2px solid #FFD700;
 }
 
-/* Style untuk tombol yang sedang aktif */
 .nav-link.active {
-    background-color: #FFD700; /* Latar menjadi warna emas/kuning */
+    background-color: #FFD700;
 }
 
-/* Style untuk teks di dalam tombol yang aktif */
 .nav-link.active span {
-    color: #121212; /* Warna teks menjadi gelap agar kontras */
+    color: #121212;
 }
